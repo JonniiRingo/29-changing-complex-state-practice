@@ -11,11 +11,9 @@ function App() {
     const {value, name} = event.target;
 
     setContact(prevValue => {
-      if (name === "fName"){
         return {
           ... prevValue,
           [name]: value,
-        };
       }
     });
   }
